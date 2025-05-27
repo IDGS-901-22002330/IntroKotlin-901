@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".diccionario.CapturarActivity"
+    android:background="#99d9ea">
+
+    <EditText
+        android:id="@+id/campo_palabra_ingles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Palabra en Inglés"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/campo_palabra_espanol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Palabra en Español"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/boton_guardar_palabras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Palabras"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/boton_regresar_menu_agregar"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Regresar al Menú"/>
+
+</LinearLayout>

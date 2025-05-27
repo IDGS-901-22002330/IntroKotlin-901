@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".diccionario.BuscarActivity"
+    android:background="#99d9ea">
+
+    <EditText
+        android:id="@+id/campo_buscar_palabra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa la palabra a buscar"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/grupo_opciones_busqueda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radio_buscar_espanol"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ingles"/>
+
+        <RadioButton
+            android:id="@+id/radio_buscar_ingles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Español"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/boton_buscar_palabra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/texto_resultado_busqueda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado de la búsqueda aparecerá aquí."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/boton_regresar_menu_buscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar al Menú"/>
+
+</LinearLayout>
